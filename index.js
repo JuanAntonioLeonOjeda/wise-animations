@@ -43,6 +43,7 @@ const timerId = setInterval(() => {
   moveElement(enemy)
   const gameOver = checkCollision()
   if (gameOver) {
-    
+    clearInterval(timerId)
+    window.alert('Game Over')
   }
 }, 500)
